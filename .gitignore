@@ -2,3 +2,4 @@ scratch.*
 *.pyc
 *.bak
 
+.vscode/
