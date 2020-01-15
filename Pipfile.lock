@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a82b674d67d29678775ff6b773de1686a9593749ec14483b0d8e05131b662286"
+            "sha256": "ad4442761666ce728806e472342d6c5d7df6d84eff70292cddb835b37117609e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "aniso8601": {
+            "hashes": [
+                "sha256:513d2b6637b7853806ae79ffaca6f3e8754bdd547048f5ccc1420aec4b714f1e",
+                "sha256:d10a4bf949f619f719b227ef5386e31f49a2b6d453004b21f02661ccc8670c7b"
+            ],
+            "version": "==7.0.0"
+        },
         "click": {
             "hashes": [
                 "sha256:2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13",
@@ -30,6 +37,48 @@
             ],
             "index": "pypi",
             "version": "==1.1.1"
+        },
+        "flask-graphql": {
+            "hashes": [
+                "sha256:825578c044df436cd74503a38bbd31c919a90acda5e9b6e0e45736964bc5235d"
+            ],
+            "index": "pypi",
+            "version": "==2.0.1"
+        },
+        "graphene": {
+            "hashes": [
+                "sha256:09165f03e1591b76bf57b133482db9be6dac72c74b0a628d3c93182af9c5a896",
+                "sha256:2cbe6d4ef15cfc7b7805e0760a0e5b80747161ce1b0f990dfdc0d2cf497c12f9"
+            ],
+            "version": "==2.1.8"
+        },
+        "graphene-sqlalchemy": {
+            "hashes": [
+                "sha256:6d5d6687e84350b418c1eca780191526bbd24e53523a0781f70ad2e1bdc64651",
+                "sha256:fda3a131149a96f02b18c4d8276102edd80ba22b92939c9a3fc94bda699c1477"
+            ],
+            "index": "pypi",
+            "version": "==2.2.2"
+        },
+        "graphql-core": {
+            "hashes": [
+                "sha256:1488f2a5c2272dc9ba66e3042a6d1c30cea0db4c80bd1e911c6791ad6187d91b",
+                "sha256:da64c472d720da4537a2e8de8ba859210b62841bd47a9be65ca35177f62fe0e4"
+            ],
+            "version": "==2.2.1"
+        },
+        "graphql-relay": {
+            "hashes": [
+                "sha256:870b6b5304123a38a0b215a79eace021acce5a466bf40cd39fa18cb8528afabb",
+                "sha256:ac514cb86db9a43014d7e73511d521137ac12cf0101b2eaa5f0a3da2e10d913d"
+            ],
+            "version": "==2.0.1"
+        },
+        "graphql-server-core": {
+            "hashes": [
+                "sha256:fa810f811cd91dd938ac49819562c3a12f2b6bf141164f984b16359359133983"
+            ],
+            "version": "==1.1.3"
         },
         "itsdangerous": {
             "hashes": [
@@ -77,6 +126,40 @@
                 "sha256:e249096428b3ae81b08327a63a485ad0878de3fb939049038579ac0ef61e17e7"
             ],
             "version": "==1.1.1"
+        },
+        "promise": {
+            "hashes": [
+                "sha256:dfd18337c523ba4b6a58801c164c1904a9d4d1b1747c7d5dbf45b693a49d93d0"
+            ],
+            "version": "==2.3"
+        },
+        "rx": {
+            "hashes": [
+                "sha256:13a1d8d9e252625c173dc795471e614eadfe1cf40ffc684e08b8fff0d9748c23",
+                "sha256:7357592bc7e881a95e0c2013b73326f704953301ab551fbc8133a6fadab84105"
+            ],
+            "version": "==1.6.1"
+        },
+        "singledispatch": {
+            "hashes": [
+                "sha256:5b06af87df13818d14f08a028e42f566640aef80805c3b50c5056b086e3c2b9c",
+                "sha256:833b46966687b3de7f438c761ac475213e53b306740f1abfaa86e1d1aae56aa8"
+            ],
+            "version": "==3.4.0.3"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1f1b7d42e254082a9db6279deae68afb421ceba6158efa6131de7b3003ee93fd",
+                "sha256:30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
+            ],
+            "version": "==1.13.0"
+        },
+        "sqlalchemy": {
+            "hashes": [
+                "sha256:bfb8f464a5000b567ac1d350b9090cf081180ec1ab4aa87e7bca12dab25320ec"
+            ],
+            "index": "pypi",
+            "version": "==1.3.12"
         },
         "werkzeug": {
             "hashes": [
