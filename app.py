@@ -1,11 +1,12 @@
 from flask import Flask, jsonify
 from flask import render_template
 from flask_graphql import GraphQLView
+from flask_dotenv import DotEnv
 from models import db_session
 from schema import schema, Incident
-from test_data import incidents
 
 app = Flask(__name__)
+env = DotEnv(app)
 app.debug = True
 
 app.add_url_rule(

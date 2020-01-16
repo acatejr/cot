@@ -8,7 +8,8 @@ from sqlalchemy.orm import (
 
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('sqlite:///cot.sqlite3', convert_unicode=True)
+# engine = create_engine('sqlite:///cot.sqlite3', convert_unicode=True)
+engine = create_engine('postgresql://postgres:sql88@localhost:5432/postgres', convert_unicode=True)
 db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
 
 Base = declarative_base()
@@ -17,6 +18,7 @@ Base.query = db_session.query_property()
 class Incident(Base):
     __tablename__ = 'incident'
     id = Column(Integer, primary_key=True)
+    # The description of the incident
     description = Column(String)
     latitude = Column(Numeric(15, 10))
     longitude = Column(Numeric(15, 10))
