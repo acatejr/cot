@@ -1,11 +1,11 @@
 import graphene
 from graphene import relay
 from graphene_sqlalchemy import SQLAlchemyObjectType, SQLAlchemyConnectionField
-from models import Incident
+from models import Incident as IncidentModel
 
 class Incident(SQLAlchemyObjectType):
     class Meta:
-        model = Incident
+        model = IncidentModel
         interfaces = (relay.Node, )
 
 class IncidentConnection(relay.Connection):

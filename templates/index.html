@@ -51,13 +51,13 @@
             //     //.openPopup();
 
             $(document).ready(function() {
-                $.getJSON("/api/incidents", function(data) {
-                    // console.dir(data.incidents)
-                    // var items = [];
-                    $.each(data.incidents, function(k, v) {                        
-                        var loc = [v.lat, v.lng];
+                var url = "http://localhost:5000/graphql?query={incidents(first: 1000){edges{node{id%2Cdescription%2Clatitude%2Clongitude}}}}"
+                $.getJSON(url, function(data) {
+                    $.each(data.data.incidents.edges, function(k, v) {                                                
+                        var loc = [v.node.latitude, v.node.longitude];
+                        console.dir(loc);
                         L.marker(loc).addTo(map)
-                            .bindPopup(v.description);
+                             .bindPopup(v.node.description);
                     });
                 });
             });
